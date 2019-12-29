@@ -34,7 +34,7 @@ foreach($Server in $ServerArray)
     $ExportList += $Export
     }
 
-      $FileName = "D:\ERCDashboard\temp\SiteData\UPDATES-Report\" + $LocationShort[$Num] + "-Report-Updates" + ".csv"
+      $FileName = "[FILEPATH]" + $LocationShort[$Num] + "-Report-Updates" + ".csv"
     $ExportList | select $LocationLong[$Num], Title, " ", Needed, Installed, Complete | Export-CSV -Path $Filename -NoTypeInformation
     $Num+=1
 #Exports to the file, does one per server and then restarts the loop
