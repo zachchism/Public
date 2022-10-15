@@ -1,7 +1,5 @@
 ﻿ #Author: Zachary Chism
- 
- 
- 
+   
 #Checks for TPM chip
 function TPMCheck(){
 $Script:TPMStatus = Get-TPM
