@@ -63,7 +63,7 @@ function checkForGDrive()
 
 function askForInput()
 {
-Write-Host = "Input number for what version of I3 you need installed. The only input accept is 1, 2, 3, 4, or 5."
+Write-Host = "Input number for what version of I3 you need installed. The only input accepted is 1, 2, 3, 4, or 5."
 Write-Host = "1 is for User Apps.
 2 is for  Business Apps.
 3 is for Server Apps.
