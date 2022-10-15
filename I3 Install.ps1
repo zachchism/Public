@@ -162,8 +162,5 @@ switch ($caseInput)
 
 
 askForInput
-#Get-Variable -Scope global
-installFunction
 
-#uninstall server working
-#Start-Process -FilePath msiexec.exe -ArgumentList  @('/uninstall "{959DA3D2-0EE3-483E-B728-919D5F4CDD89}" /qn ')-wait     
+installFunction
