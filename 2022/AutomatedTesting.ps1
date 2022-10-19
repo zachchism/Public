@@ -281,6 +281,3 @@ if(test-path $CSVExportSummaryPath){
 Remove-Item -Path $CSVExportSummaryPath
 }
 $CSVExportSummary | Export-csv -Path $CSVExportSummaryPath -NoTypeInformation -Append
-
-
-
