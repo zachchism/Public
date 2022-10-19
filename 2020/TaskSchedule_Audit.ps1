@@ -27,11 +27,9 @@ $Export | Add-Member -MemberType NoteProperty -Name "LastRunResult" -Value $Task
 $Export | Add-member -MemberType NoteProperty -Name "TaskNextRun" -Value $TaskNextRun -Force
 $Export | Add-Member -MemberType NoteProperty -Name "MissedRuns" -Value $TaskMissed -Force
 
-
 #Add members to final ExportList
 $ExportList += $Export
 }
-
 
 $ExportList | select TaskAuthor, TaskTitle, TaskDescription, LastRunTime, LastRunResult, TaskNextRun, MissedRuns | Export-CSV -Path '[FILEPATH]' -NoTypeInformation
 
